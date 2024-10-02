@@ -22,7 +22,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         header img {
-            height: 100px; /* Increase the logo size */
+            height: 100px;
             cursor: pointer;
         }
         nav {
@@ -35,10 +35,11 @@
             margin-left: 20px;
             font-size: 18px;
             padding: 10px;
-            transition: color 0.3s;
+            transition: color 0.3s, background-color 0.3s;
         }
         nav a:hover {
-            color: #000;
+            background-color: #e0e0e0;
+            border-radius: 8px;
         }
         .hamburger {
             display: none;
@@ -55,7 +56,7 @@
         .main-content {
             text-align: center;
             padding: 0;
-            height: calc(100vh - 160px); /* Adjust height to fit image between header and footer */
+            height: calc(100vh - 160px);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -63,9 +64,9 @@
         }
 
         .main-content img {
-            height: 100%; /* Ensure the image fills the available space */
-            width: 100%;  /* Make sure the image fits within the container */
-            object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
 
         footer {
@@ -91,12 +92,12 @@
 <header>
     <img src="MK_AC_Logo.png" alt="MK Alpha Capital Logo" ondblclick="reloadPage()">
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Strategy</a>
-        <a href="#">Tools</a>
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Impressum</a>
+        <a href="index.html">Home</a>
+        <a href="strategy.html">Strategy</a>
+        <a href="tools.html">Tools</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="Impressum.html">Impressum</a>
     </nav>
     <div class="hamburger" onclick="toggleMenu()">
         <div></div>
