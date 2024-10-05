@@ -1,134 +1,57 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tools | MK Alpha Capital</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background-color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        header img {
-            height: 100px;
-            cursor: pointer;
-        }
-        nav {
-            display: flex;
-            align-items: center;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 18px;
-            padding: 10px;
-            transition: color 0.3s, background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #e0e0e0; /* Light gray background */
-            border-radius: 8px; /* Slightly rounded corners */
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-        .hamburger div {
-            width: 25px;
-            height: 3px;
-            background-color: #333;
-            margin: 4px 0;
-        }
-
-        .main-content {
-            text-align: center;
-            padding: 0;
-            height: calc(100vh - 160px); /* Adjust height to fit content between header and footer */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .main-content img {
-            height: 100%; /* Ensure the image fills the available space */
-            width: 100%;  /* Make sure the image fits within the container */
-            object-fit: cover; /* Maintain aspect ratio and cover the entire area */
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #ccc;
-            color: #fff;
-            height: 50px;
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                display: none;
-            }
-            .hamburger {
-                display: flex;
-            }
-        }
-    </style>
+    <title>Tools</title>
+    <link rel="stylesheet" href="MK_AC_styleguide.css"> <!-- Link to the CSS file -->
 </head>
 <body>
 
-<header>
-    <img src="MK_AC_Logo.png" alt="MK Alpha Capital Logo" ondblclick="reloadPage()">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="strategy.html">Strategy</a>
-        <a href="tools.html">Tools</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="impressum.html">Impressum</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <img src="MK_AC_logo.png" alt="MK Alpha Capital Logo"> <!-- Logo eingebunden -->
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="strategy.html">Strategy</a>
+            <a href="tools.html">Tools</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
+        <div class="hamburger">&#9776;</div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="strategy.html">Strategy</a>
+            <a href="tools.html">Tools</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
     </nav>
-    <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</header>
 
-<div class="main-content">
-    <h1>Welcome to the Tools Page</h1>
-</div>
+    <!-- Hauptinhalt -->
+    <main>
+        
+  <h1>Umsetzung der Strategie</h1><h2>Börsenplätze auswählen und alle Unternehmen unter 5 und über 100 Millionen USD Markkapitalisierung ausfiltern</h2><p>In der <strong>ersten Stufe</strong> unserer Investmentstrategie konzentrieren wir uns darauf, die Anzahl der investierbaren Aktien aus einer sehr breiten Basis von etwa <strong>50.000 börsengelisteten Unternehmen weltweit</strong> systematisch zu reduzieren.</p><p>Zunächst filtern wir Unternehmen nach den Börsenplätzen, an denen sie gelistet sind. Wir fokussieren uns ausschließlich auf Unternehmen, die an den nordamerikanischen Börsen (New York Stock Exchange, NYSE American, NASDAQ, Toronto Stock Exchange, TSE Venture Exchange, Canadian Securities Exchange) sowie den führenden europäischen Börsen (London Stock Exchange, Euronext und Deutsche Börse) gelistet sind. Dieser Filter reduziert die Ausgangsmenge bereits deutlich, da viele Unternehmen aus weniger entwickelten Märkten und kleineren Börsenplätzen wegfallen.</p><p>Im zweiten Schritt wenden wir eine Filterung nach der Marktkapitalisierung an. Wir schließen Unternehmen mit einer Marktkapitalisierung unter <strong>5 Millionen USD</strong> aus und fokussieren uns auf den Bereich ab 5 bis 100 Millionen USD Marktkapitalisierung. Kleine Unternehmen haben tendenziell ein größeres Potenzial für überdurchschnittliches Wachstum.</p><h2>Industrie-Filter anwenden</h2><p>Im <strong>dritten Schritt</strong> unserer Investmentstrategie werden bestimmte Sektoren und Industrien systematisch ausgeschlossen. Hierbei filtern wir gezielt Industrien, die nicht mit unseren langfristigen Werten und Zielen vereinbar sind, aus. Sowie Industrien die mit hohen Investitionen verbunden, Industrien die schlecht skalieren oder mit unserem Know-how schwer zu beurteilen sind:</p><h3>Ausschuss-Liste (Unternehmen dieser Industrien werden automatisch ausgefiltert): </h3><ul><li>Energie: Öl und Gas, Kohlebergbau, Stromversorgung </li><li>Grundstoffe: Chemie, Metallurgie, Bergbau, Papier und Holz</li><li>Industrie: Luft- und Raumfahrt, Bauwesen</li><li>Zyklische Konsumgüter: Automobilindustrie</li><li>Nicht zyklische Konsumgüter: Tabak, Körperpflegeprodukte, Haushaltsprodukte</li><li>Gesundheitswesen: Pharmazeutika, Biotechnologie, Krankenhäuser und Pflegedienste</li><li>Finanzen: Banken, Kapitalmärkte</li><li>Telekommunikation: Mobilfunk, Festnetz, Satellitenkommunikation</li><li>Versorger: Wasser, Elektrizität, Gasversorgung, Abfallwirtschaft</li><li>Verbraucherdienste: Einzelhandel, Gastgewerbe, Reisen und Tourismus</li><li>Transport: Luftfahrt, Schifffahrt, Bahntransport, Straßenverkehr</li></ul><h3>Prüfliste (hier wird versucht mit weiteren Kriterien Teilebereiche ohne Prüfung auszufiltern):</h3><ul><li>Industrie: Maschinenbau, Transport und Logistik, Rüstung</li><li>Zyklische Konsumgüter: Bekleidung, Haushaltsgeräte, Luxusgüter</li><li>Nicht zyklische Konsumgüter: Lebensmittel und Getränke</li><li>Gesundheitswesen: Medizintechnik</li><li>Finanzen: Vermögensverwaltung</li><li>Immobilien: Gewerbliche Immobilien, Wohnimmobilien, REITs</li><li>Bildung &amp; Forschung. Bildungsdienste, Forschungseinrichtungen</li></ul><h3>Positiv-Liste (Unternehmen die diesen Industrien angehören stehen automatisch auf der Long-List): </h3><ul><li>Energie: Erneuerbare Energien</li><li>Finanzen: Versicherungen</li><li>Technologie: Software, Hardware, Halbleiter, IT-Dienstleistungen, Künstliche Intelligenz</li><li>Verbraucherdienste: Medien &amp; Unterhaltung</li></ul><h2>Long-List aufbauen</h2><p>Alle Unternehmen, die den Industrie-Filter durchlaufen haben, werden einzeln angeschaut. Dabei erfolgt eine kurze Prüfung der Unternehmens-Seite. Dabei wird das Unternehmen, das Geschäftsmodell und die dargestellten Kennzahlen grob gesichtet. Unternehmen, die diese Prüfung überstehen kommen auf die Long-List.</p><h2>Short-List erstellen</h2><p>Alle Unternehmen auf der Long-List werden im Detail anhand einer umfassenden Check-Liste überprüft. Zielgröße für diesen Prozess ist eine Liste mit 50 bis 100 Unternehmen. </p><h2>Watch-List aufbauen und überwachen</h2><p>Unternehmen die kurz- bis Mittelfristig ins Portfolio aufgenommen werden sollen, werden auf unsere Watch-List aufgenommen. Diese Unternehmen werden intensiv gemonitort und dann nach definierten Kriterien ins Portfolio aufgenommen. </p><h2>Beteiligung an nicht börsennotierten Kapitalgesellschaften </h2><p>Neben börsennotierten Unternehmen beteiligen wir uns auch an Kapitalgesellschaften, die nicht börsennotiert sind. Hier nutzen wir unser Netzwerk, um mögliche Kandidaten zu identifizieren. Die Überprüfung erfolgt dann ebenfalls mit unserer umfassenden Check-Liste. </p>
+   
+    </main>
 
-<footer>
-    © 2024 MK Alpha Capital UG (haftungsbeschränkt)
-</footer>
+    <!-- Fußzeile -->
+    <footer class="footer">
+        © 2024 MK Alpha Capital UG (haftungsbeschränkt)
+    </footer>
 
-<script>
-    function toggleMenu() {
-        var nav = document.querySelector('nav');
-        if (nav.style.display === "flex") {
-            nav.style.display = "none";
-        } else {
-            nav.style.display = "flex";
-            nav.style.flexDirection = "column";
-        }
-    }
+    <script>
+        // JavaScript für das Hamburger-Menü
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
 
-    function reloadPage() {
-        location.reload();
-    }
-</script>
+        hamburger.addEventListener('click', function() {
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
 
 </body>
 </html>

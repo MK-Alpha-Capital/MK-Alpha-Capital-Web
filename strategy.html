@@ -1,212 +1,96 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strategy | MK Alpha Capital</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background-color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        header img {
-            height: 100px;
-            cursor: pointer;
-        }
-        nav {
-            display: flex;
-            align-items: center;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 18px;
-            padding: 10px;
-            transition: color 0.3s, background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #e0e0e0; /* Light gray background */
-            border-radius: 8px; /* Slightly rounded corners */
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-        .hamburger div {
-            width: 25px;
-            height: 3px;
-            background-color: #333;
-            margin: 4px 0;
-        }
-
-        .main-content {
-            text-align: left;
-            padding: 40px;
-            margin-left: 80px;
-            margin-right: 100px;
-        }
-        
-        .main-content h2 {
-            text-decoration: underline;
-        }
-
-        .main-content h3 {
-            text-decoration: underline;
-        }
-        
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #ccc;
-            color: #fff;
-            height: 50px;
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                display: none;
-            }
-            .hamburger {
-                display: flex;
-            }
-        }
-    </style>
+    <title>Strategy</title>
+    <link rel="stylesheet" href="MK_AC_styleguide.css"> <!-- Link to the CSS file -->
 </head>
 <body>
 
-<header>
-    <img src="MK_AC_Logo.png" alt="MK Alpha Capital Logo" ondblclick="reloadPage()">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="strategy.html">Strategy</a>
-        <a href="tools.html">Tools</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="impressum.html">Impressum</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <img src="MK_AC_logo.png" alt="MK Alpha Capital Logo"> <!-- Logo eingebunden -->
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="strategy.html">Strategy</a>
+            <a href="tools.html">Tools</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
+        <div class="hamburger">&#9776;</div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="strategy.html">Strategy</a>
+            <a href="tools.html">Tools</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
     </nav>
-    <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</header>
 
-<div class="main-content">
-    <article>
-
-<p><h2>Alpha beim Investieren</strong></h2></p>
-    <p>Das Streben nach Alpha, also der &Uuml;berrendite gegen&uuml;ber dem Markt, ist ein zentrales Ziel vieler aktiver Investoren. Um dieses Ziel zu erreichen, ist es wichtig, die Funktionsweise der M&auml;rkte, die verschiedenen Faktoren, die Renditen beeinflussen, und die Strategien zu verstehen, die zu langfristigem Erfolg f&uuml;hren k&ouml;nnen. Dieser Aufsatz beleuchtet die Theorie der effizienten M&auml;rkte, die Rolle des Size-Faktors, das Konzept der Margin of Safety sowie die Bedeutung der langen Haltedauer.</p>
-    <p><strong></strong></p>
-
-<p><h3>Theorie der effizienten M&auml;rkte (EMH)</h3></p>
-    <p>Die<strong> Efficient Market Hypothesis (EMH) </strong>wurde in den 1960er Jahren von Eugene F. Fama entwickelt und in seinem einflussreichen Artikel <em>"Efficient Capital Markets: A Review of Theory and Empirical Work" </em>aus dem Jahr 1970 formalisiert. Die EMH besagt, dass alle verf&uuml;gbaren Informationen zu jedem Zeitpunkt vollst&auml;ndig in den Marktpreisen reflektiert sind. Demnach spiegeln Aktienkurse stets den fairen Wert eines Unternehmens wider, da neue Informationen sofort und vollst&auml;ndig eingepreist werden. In einem solchen Markt ist es nicht m&ouml;glich, systematisch Alpha zu generieren, also den Markt dauerhaft zu schlagen, weil es keine unter- oder &uuml;berbewerteten Aktien gibt.</p>
-    <p><strong></strong></p>
-
-<p><h3>Grenzen der EMH in der Praxis</h3></p>
-    <p>In der Praxis st&ouml;&szlig;t die EMH jedoch auf mehrere Grenzen. M&auml;rkte sind nicht immer perfekt effizient, und es gibt verschiedene Faktoren, die zu Ineffizienzen f&uuml;hren k&ouml;nnen:</p>
-    <ul>
-        <li style="margin-bottom:16px;"}><strong>Psychologische Faktoren:</strong> Die Behavioral Finance besch&auml;ftigt sich mit den psychologischen Einfl&uuml;ssen auf das Anlegerverhalten. Emotionen wie Angst, Gier oder Herdenverhalten k&ouml;nnen zu irrationalen Entscheidungen f&uuml;hren. Beispiele sind &Uuml;berreaktionen auf Nachrichten oder &uuml;berm&auml;&szlig;iger Optimismus bzw. Pessimismus, die zu Fehlbewertungen von Aktien f&uuml;hren k&ouml;nnen.</li>
-        <li style="margin-bottom:16px;"}><strong>Informationsasymmetrien</strong>: Nicht alle Marktteilnehmer verf&uuml;gen &uuml;ber die gleichen Informationen, und Informationen werden nicht immer sofort und vollst&auml;ndig verbreitet oder verstanden. Dies kann dazu f&uuml;hren, dass bestimmte Aktien unter- oder &uuml;berbewertet sind.</li>
-        <li style="margin-bottom:16px;"}><strong>Transaktionskosten und Marktfriktione</strong>n: Kosten f&uuml;r Handel, Steuern und andere Hindernisse k&ouml;nnen die Effizienz des Marktes beeintr&auml;chtigen.</li>
-    </ul>
-    <p>Diese Ineffizienzen erm&ouml;glichen es Investoren, durch sorgf&auml;ltige Analyse und gezielte Strategien Alpha zu generieren.</p>
-    <p></p>
+    <!-- Hauptinhalt -->
+    <main>
         
-<p><h3>Chancen bei kleinen Unternehmen</h3></p>
-    <p>Besonders bei kleineren Unternehmenist es schwieriger, effiziente M&auml;rkte aufrechtzuerhalten:</p>
-        <ul>
-        <li style="margin-bottom:16px;"}><strong>Weniger &ouml;ffentliche Informationen</strong>: Es stehen weniger Daten und Nachrichten zur Verf&uuml;gung, was die Bewertung erschwert. F&uuml;r Investoren, die bereit sind, gr&uuml;ndliche eigene Analysen durchzuf&uuml;hren, ergeben sich dadurch Chancen, unterbewertete Aktien zu identifizieren.</li>
-        <li style="margin-bottom:16px;"}><strong>Geringere Analystenabdeckung</strong>: Kleine Unternehmen werden oft von weniger oder gar keinen Finanzanalysten beobachtet. Dadurch gibt es weniger Research-Berichte und weniger Aufmerksamkeit von institutionellen Investoren. Dies f&uuml;hrt dazu, dass Informationen &uuml;ber diese Unternehmen weniger verbreitet sind, was zu Fehlbewertungen f&uuml;hren kann.</li>
-        <li style="margin-bottom:16px;"}><strong>Geringere Liquidit&auml;t</strong>: Der Handel mit Small-Cap-Aktien ist oft weniger liquide, was zu gr&ouml;&szlig;eren Preisschwankungen f&uuml;hren kann. Dies kann sowohl ein Risiko als auch eine Chance sein. Preisvolatilit&auml;t kann zu attraktiven Einstiegspunkten f&uuml;hren.</li>
-        <li style="margin-bottom:16px;"}><strong>Wachstumspotenzial</strong>: Kleine Unternehmen haben oft ein h&ouml;heres Wachstumspotenzial als etablierte Gro&szlig;konzerne. Sie k&ouml;nnen in Nischenm&auml;rkten operieren, innovative Produkte oder Dienstleistungen anbieten und schneller auf Marktver&auml;nderungen reagieren.</li>
-        <li style="margin-bottom:16px;"}><strong>Ineffiziente Preisbildung</strong>: Aufgrund der oben genannten Faktoren spiegeln die Aktienkurse von Small-Cap-Unternehmen oft nicht ihren wahren inneren Wert wider. Dies schafft<strong>Ineffizienzen</strong>, die von informierten und geduldigen Investoren ausgenutzt werden k&ouml;nnen.</li>
-        <li style="margin-bottom:16px;"}><strong>Institutionelle Investoren: </strong>Wenn ein gro&szlig;er Investor eine bedeutende Position in einem kleinen Unternehmen aufbauen m&ouml;chte, k&ouml;nnte dies den Aktienkurs erheblich beeinflussen. Dies macht es f&uuml;r institutionelle Anleger unattraktiv, da sie nicht effizient kaufen oder verkaufen k&ouml;nnen, ohne den Marktpreis zu bewegen. F&uuml;r gro&szlig;e Fonds w&auml;re es auch administrativ sehr aufwendig, viele kleine Positionen zu halten. Es ist effizienter, in weniger, aber gr&ouml;&szlig;ere Positionen zu investieren.</li>
-    </ul>
-<p>Diese Faktoren f&uuml;hren dazu, dass die Preise kleiner Unternehmen oft weniger genau ihren tats&auml;chlichen Wert widerspiegeln.Ineffizienzenentstehen, die informierte und geduldige Investoren nutzen k&ouml;nnen. Durch gr&uuml;ndliche Analyse und Recherche k&ouml;nnen solche Anleger unterbewertete Aktien identifizieren und so Alpha erzielen.</p>
-<p><strong></strong></p>
-
-<p><h3>Size-Faktor</h3></p>
-    <p>Die Arbeiten von Eugene F. Famaund und Kenneth R. French haben einen bedeutenden Beitrag zum Verst&auml;ndnis der Renditeunterschiede zwischen Aktien geleistet. In ihrem 1992 ver&ouml;ffentlichten Papier <em>"The Cross-Section of Expected Stock Returns" </em>f&uuml;hrten sie das Drei-Faktoren-Modell ein. Neben dem Marktfaktor (Beta) ber&uuml;cksichtigten sie denSize-Faktor(SMB &ndash; Small Minus Big) und denValue-Faktor(HML &ndash; High Minus Low).</p>
-    <p><strong>Das Drei-Faktoren-Modell</strong></p>
-    <ul>
-        <li style="margin-bottom:16px;"}><strong>Marktfaktor (Beta):</strong> Misst die Sensitivit&auml;t eines Portfolios gegen&uuml;ber Bewegungen des Gesamtmarktes.</li>
-        <li style="margin-bottom:16px;"}><strong>Size-Faktor (SMB):</strong> Basiert auf der Beobachtung, dass Aktien von kleineren Unternehmen tendenziell h&ouml;here Renditen erzielen als solche von gr&ouml;&szlig;eren Unternehmen.</li>
-        <li style="margin-bottom:16px;"}><strong>Value-Faktor (HML):</strong> Reflektiert die Renditedifferenz zwischen Aktien mit hohem Buchwert-Marktwert-Verh&auml;ltnis (Value-Aktien) und solchen mit niedrigem Verh&auml;ltnis (Growth-Aktien).</li>
-    </ul>
-    <p><strong>Erweiterung zum F&uuml;nf-Faktoren-Modell</strong></p>
-    <p>Im Jahr 2015 erweiterten Fama und French ihr Modell in dem Papier <em>"A Five-Factor Asset Pricing Model" </em>um zwei weitere Faktoren:</p>
-    <ul>
-        <li style="margin-bottom:16px;"}><strong>Profitabilit&auml;tsfaktor (RMW &ndash; Robust Minus Weak):</strong> Misst die Renditedifferenz zwischen Unternehmen mit hoher und niedriger Profitabilit&auml;t.</li>
-        <li style="margin-bottom:16px;"}><strong>Investitionsfaktor (CMA &ndash; Conservative Minus Aggressive):</strong> Erfasst die Renditedifferenz zwischen Unternehmen mit konservativer und aggressiver Investitionspolitik.</li>
-    </ul>
-    <p><strong>Sechs-Faktoren-Modell und der Momentum-Faktor</strong></p>
-    <p>Einige Erweiterungen des Modells ber&uuml;cksichtigen einen zus&auml;tzlichen Faktor:</p>
-    <ul>
-       <li style="margin-bottom:16px;"}><strong>Momentum-Faktor (UMD &ndash; Up Minus Down):</strong> Basiert auf der Beobachtung, dass Aktien, die in der Vergangenheit gut abgeschnitten haben, tendenziell weiterhin &uuml;berdurchschnittliche Renditen erzielen.</li>        </ul>
-    <p><strong></strong></p>
-
-<p><h3>Downside Risks </h3></p>
-    <p>An diesem Punkt ist es wichtig, nicht nur die potenziellen Renditen zu betrachten, sondern auch die Risiken, insbesondere das Downside Risk, zu verstehen. Benjamin Graham, oft als der Vater des Value Investing bezeichnet, hat mit seinem Buch <em>"The Intelligent Investor" </em>, erstmals ver&ouml;ffentlicht im Jahr 1949, einen Meilenstein in der Investmentliteratur gesetzt. Grahams Konzepte bieten wertvolle Einblicke, wie Investoren das Downside Risk managen und gleichzeitig Alpha generieren k&ouml;nnen.</p>
-
-    <p><strong>Das Konzept der Margin of Safety</strong></p>
-    <p>Eines der zentralen Konzepte in Grahams Werk ist dieMargin of Safety(Sicherheitsmarge). Sie beschreibt den Unterschied zwischen deminneren Werteines Unternehmens und seinem aktuellenMarktpreis. Graham argumentiert, dass Investoren nur dann in eine Aktie investieren sollten, wenn ihr Marktpreis deutlich unter ihrem inneren Wert liegt. Dieser Puffer sch&uuml;tzt den Investor vor Fehlern in der Analyse, unvorhergesehenen Marktbedingungen und anderen Unsicherheiten.</p>
-    <p>Beispiel:Wenn ein Investor den inneren Wert einer Aktie auf 100 &euro; sch&auml;tzt, sollte er sie nur kaufen, wenn der Marktpreis deutlich darunter liegt, etwa bei 70 &euro;. Die Differenz von 30 &euro; (oder 30 %) ist die Margin of Safety. Sie bietet Schutz, falls sich die Annahmen als zu optimistisch erweisen oder negative Ereignisse eintreten.</p>
-    <p><strong>Bedeutung der Margin of Safety</strong></p>
-    <ul>
-        <li style="margin-bottom:16px;"}><strong>Schutz vor Fehlern: </strong>Kein Investor kann die Zukunft exakt vorhersagen. Die Margin of Safety ber&uuml;cksichtigt diese Unsicherheit und bietet einen Puffer gegen Fehlkalkulationen.</li>
-        <li style="margin-bottom:16px;"}><strong>Risikomanagement: </strong>Durch den Kauf von Aktien unter ihrem inneren Wert reduziert der Investor dasDownside Risk. Selbst wenn der Markt weiter f&auml;llt, ist das Verlustpotenzial geringer als bei &uuml;berbewerteten Aktien.</li>
-        <li style="margin-bottom:16px;"}><strong>Langfristiger Erfolg: </strong>Die Margin of Safety erm&ouml;glicht es, langfristig erfolgreich zu investieren, indem sie die Wahrscheinlichkeit erh&ouml;ht, dass sich der Marktpreis irgendwann dem inneren Wert ann&auml;hert.</li>
-    </ul>
-    <p><strong></strong></p>
-
-<p><h3>Zinseszins und steuerliche Effekte</h3></p>
-    <p>Eine lange Haltedauer spielt eine zentrale Rolle beim Investieren, insbesondere bei der Maximierung von Alpha. Ein Schl&uuml;sselfaktor ist der Zinseszinseffekt, der beschreibt, wie Kapital &uuml;ber die Zeit exponentiell w&auml;chst. Dieser Effekt ist besonders wirksam bei renditestarken Small-Caps.</p>
-    <p>Dar&uuml;ber hinaus hat eine lange Haltedauer auch steuerliche Vorteile. So lange Gewinne nicht realsiert werden. Kann der Zinseszinseffekt auf das gesamte Kapital wirken und wird nicht durch vorzeitge Steuerzahlungen redziert.</p>
-    <p></p>
-
-<p><h3>Fazit</h3></p>
-    <p>Das Streben nach Alpha erfordert ein tiefes Verst&auml;ndnis der Marktmechanismen, der Risiken und der Strategien, die zu langfristigem Erfolg f&uuml;hren. Die Theorie der effizienten M&auml;rkte zeigt, warum es schwierig ist, den Markt zu schlagen, aber ihre Grenzen weisen auf die Chancen hin, die insbesondere bei Small-Cap-Aktien bestehen. Durch die Anwendung der <strong>Margin of Safety</strong>, k&ouml;nnen Investoren das Downside Risk reduzieren und die Wahrscheinlichkeit erh&ouml;hen, langfristig erfolgreich zu sein.</p>
-    <p>Die Bedeutung der<strong> langen Haltedauer </strong>und des<strong> Zinseszinseffekts </strong>kann nicht genug betont werden. Sie erm&ouml;glichen es Investoren, die Vorteile des exponentiellen Wachstums zu nutzen und langfristig erheblichen Wohlstand aufzubauen. In Kombination mit steuerlichen Effekten und reduzierten Transaktionskosten wird die langfristige Investmentstrategie noch attraktiver.</p>
-    <p>Die Kombination aus der Nutzung bew&auml;hrter Investmentstrategien, wie sie in <em>"The Intelligent Investor"</em> beschrieben sind, der Ber&uuml;cksichtigung von Faktoren wie dem Small-Cap-Faktor und der Fokussierung auf risikoadjustierte Renditen erm&ouml;glicht es Investoren, nachhaltig Alpha zu generieren. <strong>Geduld</strong>, <strong>Disziplin</strong> und ein <strong> rationaler Ansatz </strong>sind dabei die Schl&uuml;ssel zum Erfolg.</p>
-<p></p>
+    <h1>Stratgie und Investmentprozess</h1>
+        <p>MK Alpha Capital verfolgt das Ziel, über Generationen hinweg nachhaltiges Vermögen aufzubauen und dabei eine Überrendite gegenüber dem Markt zu erzielen. Um dieses Ziel zu erreichen, haben wir einen strukturierten Prozess entwickelt, der es uns ermöglicht, ineffiziente Märkte zu identifizieren und gezielte, langfristige Investmententscheidungen zu treffen. Wir suchen dabei gezielt nach Unternehmen, die das Potenzial haben, ihren Wert in einem Zeitraum von 10 bis 20 Jahren um den Faktor 100 zu steigern, mit dem Ziel, ein konzentriertes Portfolio von 12 bis 20 Werten aufzubauen.</p>
         
-    </article>
-</div>
+        <h2>1. Ineffiziente Märkte finden</h2>
+        <p>Im ersten Schritt suchen wir nach Märkten, die aufgrund spezifischer Bedingungen ineffizient sind. Solche Märkte bieten oft unterbewertete Chancen, die von der breiten Masse übersehen werden. Durch tiefe Analyse und intensive Marktforschung können wir diese Nischen identifizieren und nutzen.</p>
+        
+        <h2>2. Size-Faktor nutzen</h2>
+        <p>Wir konzentrieren uns gezielt auf kleinere und mittlere Unternehmen, die das Potenzial haben, überdurchschnittlich zu wachsen. Diese Unternehmen bieten oft größere Wachstumschancen, insbesondere wenn sie unter dem Radar der großen Investoren agieren. Unser Ziel ist es, solche Unternehmen frühzeitig zu erkennen und von ihrem Wachstumspotenzial zu profitieren.</p>
+        
+        <h2>3. Sektor-Filter definieren</h2>
+        <p>Ein weiterer Schritt ist die sorgfältige Auswahl der Branchen, in denen wir investieren. Wir legen klare Sektor-Filter fest, um uns auf Branchen zu konzentrieren, die langfristige Wachstumsperspektiven bieten und gleichzeitig ein attraktives Verhältnis von Risiko und Ertrag aufweisen. Dabei achten wir auf strukturelle Veränderungen und Megatrends, die das Potenzial haben, ganze Sektoren zu transformieren.</p>
+        
+        <h2>4. Investmentprofil festlegen</h2>
+        <p>Wir definieren für jedes potenzielle Investment ein detailliertes Profil, das auf klaren Bewertungskriterien basiert. Diese umfassen finanzielle Kennzahlen, Marktpositionierung, Wachstumsaussichten sowie die Qualität des Managements. Das Investmentprofil hilft uns, eine fundierte und systematische Bewertung des Unternehmens vorzunehmen.</p>
+        
+        <h2>5. Geschäftsmodell und Entwicklungspotentiale verstehen</h2>
+        <p>Ein tiefes Verständnis des Geschäftsmodells ist für uns essenziell. Wir investieren nur in Unternehmen, deren Geschäftsmodell und Wachstumspotenziale wir vollständig nachvollziehen können. Dies erlaubt es uns, sowohl Risiken als auch Chancen präzise zu bewerten, um langfristige Erfolge zu erzielen.</p>
+        
+        <h2>6. Weitere Kriterien</h2>
+        <p>Neben den klassischen Kennzahlen berücksichtigen wir zusätzliche Faktoren wie Corporate Governance, ESG-Kriterien (Umwelt, Soziales und Unternehmensführung) sowie die Innovationskraft eines Unternehmens. Diese zusätzlichen Kriterien helfen uns, ein umfassenderes Bild des Unternehmens zu gewinnen und potenzielle Risiken besser zu verstehen.</p>
+        
+        <h2>7. Investmententscheidung und Überprüfung</h2>
+        <p>Am Ende dieses strukturierten Prozesses treffen wir eine Investmententscheidung. Dabei liegt der Fokus auf einer klaren Abwägung zwischen Chancen und Risiken, immer mit Blick auf unser langfristiges Ziel. Wir streben an, Unternehmen auszuwählen, die das Potenzial haben, ihren Wert über einen Zeitraum von 10 bis 20 Jahren um den Faktor 100 zu steigern. Unser Zielportfolio besteht dabei aus 12 bis 20 sorgfältig ausgewählten Werten, die alle diese strikten Kriterien erfüllen. Wir überprüfen jede Entscheidung mindestens einmal pro Jahr. Solange die Grundlage für die Entscheidung unverändert besteht halten wir das Unternhemen weiter. Kommt es zu großen negaiven Abweichungen, dann erfolgt eine umfassende Überprüfung die dazu führen kann dass das Unternhmen verkauft wird. </p>
+    
+    
+    <h1>Exkurs Efficient Market Hypothesis</h1>
+        <h2>Theorie der effizienten Märkte </h2>
+        <p>Die<strong> Efficient Market Hypothesis (EMH) </strong>wurde in den 1960er Jahren von Eugene F. Fama entwickelt und in seinem einflussreichen Artikel <em>Efficient Capital Markets: A Review of Theory and Empirical Work </em>aus dem Jahr 1970 formalisiert. Die EMH besagt, dass alle verfügbaren Informationen zu jedem Zeitpunkt vollständig in den Marktpreisen reflektiert sind. Demnach spiegeln Aktienkurse stets den fairen Wert eines Unternehmens wider, da neue Informationen sofort und vollständig eingepreist werden. In einem solchen Markt ist es nicht möglich, systematisch Alpha zu generieren, also den Markt dauerhaft zu schlagen, weil es keine unter- oder überbewerteten Aktien gibt.</p>
+        
+        <h2>Grenzen der EMH in der Praxis</h2>
+        <p>In der Praxis stößt die EMH jedoch auf mehrere Grenzen. Märkte sind nicht immer perfekt effizient, und es gibt verschiedene Faktoren, die zu Ineffizienzen führen können:</p><ul><li><strong>Psychologische Faktoren:</strong> Die Behavioral Finance beschäftigt sich mit den psychologischen Einflüssen auf das Anlegerverhalten. Emotionen wie Angst, Gier oder Herdenverhalten können zu irrationalen Entscheidungen führen. Beispiele sind Überreaktionen auf Nachrichten oder übermäßiger Optimismus bzw. Pessimismus, die zu Fehlbewertungen von Aktien führen können.</li><li><strong>Informationsasymmetrien</strong>: Nicht alle Marktteilnehmer verfügen über die gleichen Informationen, und Informationen werden nicht immer sofort und vollständig verbreitet oder verstanden. Dies kann dazu führen, dass bestimmte Aktien unter- oder überbewertet sind.</li><li><strong>Transaktionskosten und Marktfriktione</strong>n: Kosten für Handel, Steuern und andere Hindernisse können die Effizienz des Marktes beeinträchtigen.</li></ul><p>Diese Ineffizienzen ermöglichen es Investoren, durch sorgfältige Analyse und gezielte Strategien Alpha zu generieren.</p>
+        
+        <h2>Chancen bei kleinen Unternehmen</h2>
+        <p>Besonders bei kleineren Unternehmenist es schwieriger, effiziente Märkte aufrechtzuerhalten:</p><ul><li><strong>Weniger öffentliche Informationen</strong>: Es stehen weniger Daten und Nachrichten zur Verfügung, was die Bewertung erschwert. Für Investoren, die bereit sind, gründliche eigene Analysen durchzuführen, ergeben sich dadurch Chancen, unterbewertete Aktien zu identifizieren.</li><li><strong>Geringere Analystenabdeckung</strong>: Kleine Unternehmen werden oft von weniger oder gar keinen Finanzanalysten beobachtet. Dadurch gibt es weniger Research-Berichte und weniger Aufmerksamkeit von institutionellen Investoren. Dies führt dazu, dass Informationen über diese Unternehmen weniger verbreitet sind, was zu Fehlbewertungen führen kann.</li><li><strong>Geringere Liquidität</strong>: Der Handel mit Small-Cap-Aktien ist oft weniger liquide, was zu größeren Preisschwankungen führen kann. Dies kann sowohl ein Risiko als auch eine Chance sein. Preisvolatilität kann zu attraktiven Einstiegspunkten führen.</li><li><strong>Wachstumspotenzial</strong>: Kleine Unternehmen haben oft ein höheres Wachstumspotenzial als etablierte Großkonzerne. Sie können in Nischenmärkten operieren, innovative Produkte oder Dienstleistungen anbieten und schneller auf Marktveränderungen reagieren.</li><li><strong>Ineffiziente Preisbildung</strong>: Aufgrund der oben genannten Faktoren spiegeln die Aktienkurse von Small-Cap-Unternehmen oft nicht ihren wahren inneren Wert wider. Dies schafft<strong>Ineffizienzen</strong>, die von informierten und geduldigen Investoren ausgenutzt werden können.</li><li><strong>Institutionelle Investoren: </strong>Wenn ein großer Investor eine bedeutende Position in einem kleinen Unternehmen aufbauen möchte, könnte dies den Aktienkurs erheblich beeinflussen. Dies macht es für institutionelle Anleger unattraktiv, da sie nicht effizient kaufen oder verkaufen können, ohne den Marktpreis zu bewegen. Für große Fonds wäre es auch administrativ sehr aufwendig, viele kleine Positionen zu halten. Es ist effizienter, in weniger, aber größere Positionen zu investieren.</li></ul><p>Diese Faktoren führen dazu, dass die Preise kleiner Unternehmen oft weniger genau ihren tatsächlichen Wert widerspiegeln.Ineffizienzenentstehen, die informierte und geduldige Investoren nutzen können. Durch gründliche Analyse und Recherche können solche Anleger unterbewertete Aktien identifizieren und so Alpha erzielen.</p>
+        
+        <h1>Exkurs Size-Faktor</h1>
+        <p>Die Arbeiten von Eugene F. Famaund und Kenneth R. French haben einen bedeutenden Beitrag zum Verständnis der Renditeunterschiede zwischen Aktien geleistet. In ihrem 1992 veröffentlichten Papier <em>The Cross-Section of Expected Stock Returns </em>führten sie das Drei-Faktoren-Modell ein. Neben dem Marktfaktor (Beta) berücksichtigten sie den Size-Faktor (SMB – Small Minus Big) und den Value-Faktor (HML – High Minus Low).</p>
+        
+        <h3>Das Drei-Faktoren-Modell</h3>
+        <ul><li><strong>Marktfaktor (Beta):</strong> Misst die Sensitivität eines Portfolios gegenüber Bewegungen des Gesamtmarktes.</li><li><strong>Size-Faktor (SMB):</strong> Basiert auf der Beobachtung, dass Aktien von kleineren Unternehmen tendenziell höhere Renditen erzielen als solche von größeren Unternehmen.</li><li><strong>Value-Faktor (HML):</strong> Reflektiert die Renditedifferenz zwischen Aktien mit hohem Buchwert-Marktwert-Verhältnis (Value-Aktien) und solchen mit niedrigem Verhältnis (Growth-Aktien).</li></ul><h3>Erweiterung zum Fünf-Faktoren-Modell</h3><p>Im Jahr 2015 erweiterten Fama und French ihr Modell in dem Papier <em>&quot;A Five-Factor Asset Pricing Model&quot; </em>um zwei weitere Faktoren:</p><ul><li><strong>Profitabilitätsfaktor (RMW – Robust Minus Weak):</strong> Misst die Renditedifferenz zwischen Unternehmen mit hoher und niedriger Profitabilität.</li><li><strong>Investitionsfaktor (CMA – Conservative Minus Aggressive):</strong> Erfasst die Renditedifferenz zwischen Unternehmen mit konservativer und aggressiver Investitionspolitik.</li></ul><h3>Sechs-Faktoren-Modell und der Momentum-Faktor</h3><p>Einige Erweiterungen des Modells berücksichtigen einen zusätzlichen Faktor:</p><ul><li><strong>Momentum-Faktor (UMD – Up Minus Down):</strong> Basiert auf der Beobachtung, dass Aktien, die in der Vergangenheit gut abgeschnitten haben, tendenziell weiterhin überdurchschnittliche Renditen erzielen.</li></ul>
+           
+    </main>
 
-<footer>
-    © 2024 MK Alpha Capital UG (haftungsbeschränkt)
-</footer>
+    <!-- Fußzeile -->
+    <footer class="footer">
+        © 2024 MK Alpha Capital UG (haftungsbeschränkt)
+    </footer>
 
-<script>
-    function toggleMenu() {
-        var nav = document.querySelector('nav');
-        if (nav.style.display === "flex") {
-            nav.style.display = "none";
-        } else {
-            nav.style.display = "flex";
-            nav.style.flexDirection = "column";
-        }
-    }
+    <script>
+        // JavaScript für das Hamburger-Menü
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
 
-    function reloadPage() {
-        location.reload();
-    }
-</script>
+        hamburger.addEventListener('click', function() {
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
 
 </body>
 </html>
