@@ -11,14 +11,14 @@ body {
 @media (min-width: 25cm) {
     body {
         margin-left: 0.5cm;
-        margin-right: 0.5cm;
+        margin-right: 0.75cm;
     }
 }
 
 @media (max-width: 25cm) {
     body {
         margin-left: 0.25cm;
-        margin-right: 0.25cm;
+        margin-right: 0.5cm;
     }
 }
 
@@ -33,7 +33,7 @@ body {
     top: 0;
     z-index: 10;
     border-bottom: 1px solid #ddd;
-    width: 100%;
+    width: 97%;
 }
 
 .navbar img {
@@ -127,7 +127,7 @@ body {
     font-size: 0.9rem;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 97%;
     border-top: 1px solid #ddd;
 }
 
