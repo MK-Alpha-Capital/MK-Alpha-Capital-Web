@@ -134,7 +134,7 @@ body {
 /* H1-Stil */
 h1 {
     font-family: 'Helvetica', sans-serif;
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     font-weight: 300; 
     color: #333333; 
     text-align: left; 
@@ -160,12 +160,12 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 300;
     color: #666666; 
 }
