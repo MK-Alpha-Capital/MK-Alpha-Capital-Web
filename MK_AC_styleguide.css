@@ -7,6 +7,15 @@ body {
     padding: 20px;
 }
 
+strong {
+    display: inline-block; /* Ermöglicht vertikale Abstände */
+    background-image: linear-gradient(to bottom, rgba(0, 128, 0, 0.2) 0%, rgba(0, 128, 0, 0.2) 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 5px; /* Optionaler Abstand um den Text */
+    font-weight: 400; /* Setzt die Schriftstärke auf eine normale Stärke */
+}
+
 /* Layout with margins for screens */
 @media (min-width: 25cm) {
     body {
@@ -143,13 +152,12 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 
-
-   /* Textmarker-Effekt in Deepskyblue, der nur die halbe Höhe abdeckt */
     display: inline-block; /* Ermöglicht vertikale Abstände */
-    background-image: linear-gradient(transparent 50%, rgba(30, 144, 255, 0.2) 50%);
+    background-image: linear-gradient(to bottom, rgba(30, 144, 255, 0.2) 0%, rgba(30, 144, 255, 0.2) 100%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 0 5px; /* Optionaler Abstand um den Text */
+
 }
 
 /* H2 und H3 Stile */
@@ -316,3 +324,6 @@ input:focus, textarea:focus, select:focus {
     outline: none;
     border-color: #666666;
 }
+
+/* Fett -> Textmarker */
+
