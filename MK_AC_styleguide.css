@@ -7,14 +7,13 @@ body {
     padding: 20px;
 }
 
+
 strong {
-    display: inline-block; /* Ermöglicht vertikale Abstände */
-    background-image: linear-gradient(to bottom, rgba(0, 128, 0, 0.2) 0%, rgba(0, 128, 0, 0.2) 100%);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    padding: 0 5px; /* Optionaler Abstand um den Text */
-    font-weight: 400; /* Setzt die Schriftstärke auf eine normale Stärke */
+    display: inline; /* Standardwert, da wir den Text inline lassen wollen */
+    text-decoration: underline; /* Fügt eine Unterstreichung hinzu */
+    text-decoration-color: blue; /* Setzt die Farbe der Unterstreichung auf blau */
 }
+
 
 /* Layout with margins for screens */
 @media (min-width: 25cm) {
