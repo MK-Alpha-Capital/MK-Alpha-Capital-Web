@@ -1,23 +1,57 @@
+
 <!DOCTYPE html>
-    <html lang="de">
-    <head>
-        <meta charset="UTF-8">
-        <title>Konvertiertes Dokument</title>
-        <style>
-    
-    body {
-        font-family: 'Helvetica';
-    }
-    p {
-        line-height: 1.5;
-    }
-    li {
-        line-height: 1.5;
-    }
-    
-        </style>
-    </head>
-    <body>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="MK_AC_styleguide.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <img src="MK_AC_logo.png" alt="MK Alpha Capital Logo"> <!-- Logo eingebunden -->
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="strategy.html">Strategy</a>
+            <a href="tools.html">Tools</a> 
+            <a href="portfolio.html">Portfolio</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
+        <div class="hamburger">&#9776;</div>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="strategy.html">Strategy</a>
+            <a href="tools.html">Tools</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
+    </nav>
+
+    <!-- Hauptinhalt -->
+    <main>
+
     <h1>Geschäftszweck </h1><p>MK Alpha Capital wurde im Jahr 2024 gegründet und fokussiert sich auf den Erwerb, das Halten und die Veräußerung von Beteiligungen an Kapitalgesellschaften. Unser strategisches Ziel ist es, langfristigen Mehrwert durch gezielte Investitionen in innovative und wachstumsstarke Unternehmen zu generieren. Dabei konzentrieren wir uns auf transformative Branchen und Technologien mit hohem Zukunftspotenzial.</p><p>Zur optimalen Steuerung unseres Portfolios nutzen wir ergänzend auch Derivate, um Risiken aktiv zu managen und Chancen gezielt wahrzunehmen. Sämtliche Transaktionen werden ausschließlich in unserem eigenen Namen und auf eigene Rechnung durchgeführt.</p><p>Wir bieten keine Dienstleistungen für Dritte an, sondern verfolgen konsequent unsere eigenständige Investmentstrategie mit einer klar definierten Ausrichtung auf langfristige Wertsteigerung und nachhaltigen Erfolg.</p><h1>Disclaimer</h1><p>Die auf dieser Webseite bereitgestellten Informationen dienen ausschließlich allgemeinen Informationszwecken und stellen keine Anlage-, Steuer-, Rechtsberatung oder sonstige professionelle Beratung dar. Die dargestellten Inhalte beschreiben lediglich unsere Geschäftstätigkeit, Prozesse und Strategien und sollten keinesfalls als Anlageempfehlung oder konkrete Handlungsempfehlung interpretiert werden.</p><p>Anlageentscheidungen sollten stets auf Basis einer gründlichen eigenen Analyse und unter Berücksichtigung der individuellen finanziellen Situation getroffen werden. Wir empfehlen dringend, vor einer Anlageentscheidung professionelle Beratung durch einen qualifizierten Finanz-, Steuer- oder Rechtsberater einzuholen.</p><p>Die dargestellten Informationen stellen weder ein Angebot noch eine Aufforderung zum Kauf oder Verkauf von Finanzprodukten dar. Wir übernehmen keine Haftung für Verluste oder Schäden jeglicher Art, die durch die Nutzung oder das Vertrauen auf die hier zur Verfügung gestellten Informationen entstehen könnten.</p><p>Durch die Nutzung dieser Webseite erklären Sie sich ausdrücklich mit diesen Bedingungen einverstanden.</p>
-    </body>
-    </html>
+        
+    </main>
+
+    <!-- Fußzeile -->
+    <footer class="footer">
+        © 2024 MK Alpha Capital UG (haftungsbeschränkt)
+    </footer>
+
+    <script>
+        // JavaScript für das Hamburger-Menü
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+
+</body>
+</html>
